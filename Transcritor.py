@@ -27,7 +27,7 @@ def Transcritor():
         #Defino qual vai ser o nome do meu arquivo criado
         filename_audio = "Audio.mp3"
         #Criando o objeto de Youtube
-        yt = YouTube(url, on_progress_callback=on_progress, use_po_token=True)
+        yt = YouTube(url, on_progress_callback=on_progress, client="WEB")
 
         #Aqui digo que somete quero o audio do vídeo que estou mandando
         ys = yt.streams.get_audio_only()
