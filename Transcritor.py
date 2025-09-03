@@ -32,7 +32,7 @@ def Transcritor():
         #Aqui digo que somete quero o audio do vídeo que estou mandando
         ys = yt.streams.get_audio_only()
         #Faço o Download desse arquivo e digo que o nome dele vai ser igual ao que digitei antes
-        ys.download(filename=filename_audio, output_path="tmp")
+        ys.download(filename=filename_audio, output_path="downloads")
 
         #Aqui estou usando o whisper e dizendo para que ele pegue um modelo base
         model = whisper.load_model("base")
