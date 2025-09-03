@@ -1,0 +1,6 @@
+flask
+gunicorn
+pytubefix
+openai-whisper
+python-dotenv
+google-genai
