@@ -16,7 +16,7 @@ from flask import request, render_template
 #resgatando valores do .env
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder= "templates")
 
 @app.route("/", methods=['POST', 'GET'])
 def Transcritor():
